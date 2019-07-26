@@ -1,0 +1,19 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "allhands-demo-prod-20190726111453-authRole",
+            "UnauthRoleArn": "arn:aws:iam::033205456844:role/allhands-demo-prod-20190726111453-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::033205456844:role/allhands-demo-prod-20190726111453-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "allhands-demo-prod-20190726111453-deployment",
+            "UnauthRoleName": "allhands-demo-prod-20190726111453-unauthRole",
+            "StackName": "allhands-demo-prod-20190726111453",
+            "StackId": "arn:aws:cloudformation:us-west-2:033205456844:stack/allhands-demo-prod-20190726111453/441df370-afd1-11e9-9a29-0af8c7390b1e"
+        },
+        "categories": {
+            "auth": {
+                "allhandsdemob9084bf3": {}
+            }
+        }
+    }
+}

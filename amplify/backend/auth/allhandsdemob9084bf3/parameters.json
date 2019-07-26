@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "allhandsdemob9084bf3_identitypool_b9084bf3",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "allhan_b9084bf3_lambda_log_policy",
+    "openIdLambdaRoleName": "allhan_b9084bf3_openid_lambda_role",
+    "openIdRolePolicy": "allhan_b9084bf3_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "allhan_b9084bf3_openid_lambda_iam_policy",
+    "openIdLogPolicy": "allhan_b9084bf3_openid_lambda_log_policy",
+    "userPoolName": "allhandsdemob9084bf3_userpool_b9084bf3",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "allhanb9084bf3_sns-role",
+    "roleExternalId": "allhanb9084bf3_role_external_id",
+    "policyName": "allhanb9084bf3-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "allhanb9084bf3_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "allhanb9084bf3_totp_lambda_role",
+    "mfaLambdaLogPolicy": "allhanb9084bf3_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "allhanb9084bf3_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "allhanb9084bf3_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "allhanb9084bf3_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "allhanb9084bf3_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "allhanb9084bf3_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "allhandsdemob9084bf3",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
